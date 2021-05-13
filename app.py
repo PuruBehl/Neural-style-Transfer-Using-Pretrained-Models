@@ -1,10 +1,8 @@
 import tensorflow_hub as hub
-import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 import streamlit as st
 from PIL import Image
-import io
 model = hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2')
 @st.cache()
 def call_model() :
